@@ -1,14 +1,18 @@
 import Hero from '@/components/hero/Hero';
 import Navbar from '@/components/navbar/Navbar';
+import Greetings from '@/components/welcome/Greetings';
 
 export default function Home() {
   return (
-    <main
-      className="h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url('/hero/hero-bg-2.jpg')" }}
-    >
-      <Navbar />
-      <Hero />
+    <main>
+      <section
+        className="h-screen bg-cover bg-center"
+        style={{ backgroundImage: "url('/hero/hero-bg-2.jpg')" }}
+      >
+        <Navbar />
+        <Hero />
+      </section>
+      <Greetings />
     </main>
   );
 }

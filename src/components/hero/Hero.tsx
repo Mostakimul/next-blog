@@ -85,7 +85,7 @@ const Hero = () => {
         >
           {recipes.map((item) => (
             <SwiperSlide key={item.id}>
-              <div className="grid grid-cols-1 md:grid-cols-2 px-5 lg:px-0">
+              <div className="grid grid-cols-1 md:grid-cols-2">
                 <div className="place-self-center">
                   <div className="w-full">
                     <h1 className="text-4xl md:text-6xl">{item.title}</h1>
@@ -152,9 +152,10 @@ const Hero = () => {
                 <div className="place-self-center">
                   <Image
                     src={item.recipeImage}
-                    width={600}
-                    height={600}
+                    width={100}
+                    height={100}
                     alt="menu"
+                    className="w-80 h-80 lg:w-[550px] lg:h-[550px] animate-spin-slow"
                   />
                 </div>
               </div>
