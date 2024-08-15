@@ -36,7 +36,7 @@ const Navbar = () => {
               </ul>
             </div>
             <a className="text-xl bg-slate-50 px-4 py-4 rounded-md font-semibold">
-              MN's Recipies
+              MN's Recipes
             </a>
           </div>
           <div className="navbar-end bg-slate-100 rounded-l-md hidden lg:flex">
