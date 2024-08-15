@@ -1,9 +1,8 @@
-import Navbar from '@/components/navbar/Navbar';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Noto_Serif } from 'next/font/google';
+import 'swiper/css';
 import './globals.css';
-
-const inter = Inter({ subsets: ['latin'] });
+const noto_serif = Noto_Serif({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'MN Blog',
@@ -17,10 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="autumn">
-      <body className={inter.className}>
-        <Navbar />
-        <main>{children}</main>
-      </body>
+      <body className={noto_serif.className}>{children}</body>
     </html>
   );
 }

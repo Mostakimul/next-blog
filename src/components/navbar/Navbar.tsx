@@ -3,7 +3,7 @@ import NavbarItems from './NavbarItems';
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="relative z-1">
       <ContainerWrapper>
         <div className="navbar">
           <div className="navbar-start">
@@ -35,7 +35,7 @@ const Navbar = () => {
                 <NavbarItems />
               </ul>
             </div>
-            <a className="text-xl bg-slate-100 px-4 py-4 rounded-md font-semibold">
+            <a className="text-xl bg-slate-50 px-4 py-4 rounded-md font-semibold">
               MN's Recipies
             </a>
           </div>
