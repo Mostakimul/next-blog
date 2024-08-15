@@ -6,7 +6,7 @@ const Categories = () => {
     <ContainerWrapper>
       <section>
         <h3 className="text-center mb-10 text-4xl lg:text-6xl">
-          Browse Categories
+          Browse By Category
         </h3>
         <div>
           <CategoriesSlider />
