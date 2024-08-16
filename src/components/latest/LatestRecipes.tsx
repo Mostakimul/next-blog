@@ -20,12 +20,6 @@ const LatestRecipes = () => {
               Latest Recipes
             </h3>
             <div className="mt-10 mb-10 sm:mb-0">
-              {/* <Link
-                href={'/'}
-                className="btn px-10 rounded-full bg-white shadow-md"
-              >
-                View Recipes 
-              </Link> */}
               <Button
                 href="/"
                 text="View Recipes"

@@ -10,7 +10,7 @@ import Button from '../button/Button';
 const RecipeCard = ({ recipe }: { recipe: RecipeType }) => {
   const { recipeImage, title, createdBy, createdAt, rating } = recipe;
   return (
-    <div className="card glass w-full">
+    <div className="card glass w-full shadow-lg">
       <figure>
         <Image
           src={recipeImage}
