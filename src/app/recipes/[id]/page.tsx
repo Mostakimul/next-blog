@@ -1,4 +1,5 @@
 import ContainerWrapper from '@/components/ContainerWrapper';
+import RelatedRecipes from '@/components/relatedRecipes/RelatedRecipes';
 import Image from 'next/image';
 import { FaRegClock, FaRegStar } from 'react-icons/fa';
 import { IoFastFoodOutline, IoStatsChartOutline } from 'react-icons/io5';
@@ -116,6 +117,8 @@ const SingleRecipe = () => {
           </div>
         </div>
       </ContainerWrapper>
+
+      <RelatedRecipes />
     </div>
   );
 };
