@@ -2,6 +2,7 @@ import BestWeekRecipe from '@/components/bestOfTheWeek/BestWeekRecipe';
 import Categories from '@/components/categories/Categories';
 import Hero from '@/components/hero/Hero';
 import LatestRecipes from '@/components/latest/LatestRecipes';
+import LatestUpdate from '@/components/latestUpdated/LatestUpdate';
 import Navbar from '@/components/navbar/Navbar';
 import Greetings from '@/components/welcome/Greetings';
 
@@ -19,6 +20,7 @@ export default function Home() {
       <Categories />
       <LatestRecipes />
       <BestWeekRecipe />
+      <LatestUpdate />
     </main>
   );
 }

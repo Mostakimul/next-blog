@@ -4,7 +4,7 @@ import React from 'react';
 type ButtonProps = {
   href: string;
   text: string;
-  icon: React.ReactElement;
+  icon?: React.ReactElement;
 };
 
 const Button = ({ href = '#', text = '', icon }: ButtonProps) => {
