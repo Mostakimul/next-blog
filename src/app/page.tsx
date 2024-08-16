@@ -4,6 +4,7 @@ import Hero from '@/components/hero/Hero';
 import LatestRecipes from '@/components/latest/LatestRecipes';
 import LatestUpdate from '@/components/latestUpdated/LatestUpdate';
 import Navbar from '@/components/navbar/Navbar';
+import Subscribe from '@/components/subscribe/Subscribe';
 import Greetings from '@/components/welcome/Greetings';
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <LatestRecipes />
       <BestWeekRecipe />
       <LatestUpdate />
+      <Subscribe />
     </main>
   );
 }
