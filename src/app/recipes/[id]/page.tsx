@@ -78,8 +78,8 @@ const SingleRecipe = () => {
         </div>
 
         {/* Ingredients List and step */}
-        <div className="grid grid-cols-8 pb-24 gap-5">
-          <div className="card shadow-lg p-5 col-span-2">
+        <div className="grid grid-cols-1 md:grid-cols-8 pb-24 gap-5">
+          <div className="card shadow-lg p-5 col-span-full md:col-span-2">
             <h3 className="text-2xl font-semibold mb-4">Ingredients</h3>
             <ul className="list-disc list-inside space-y-2">
               {ingredients.map((ingredient, index) => (
@@ -92,7 +92,7 @@ const SingleRecipe = () => {
               ))}
             </ul>
           </div>
-          <div className="card shadow-lg p-5 col-span-6">
+          <div className="card shadow-lg p-5 col-span-full md:col-span-6">
             <div className="grid place-items-center">
               <Image
                 src={'/reciepe/menu-hero-1.png'}
