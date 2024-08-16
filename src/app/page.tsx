@@ -1,5 +1,6 @@
 import Categories from '@/components/categories/Categories';
 import Hero from '@/components/hero/Hero';
+import LatestRecipes from '@/components/latest/LatestRecipes';
 import Navbar from '@/components/navbar/Navbar';
 import Greetings from '@/components/welcome/Greetings';
 
@@ -15,6 +16,7 @@ export default function Home() {
       </section>
       <Greetings />
       <Categories />
+      <LatestRecipes />
     </main>
   );
 }

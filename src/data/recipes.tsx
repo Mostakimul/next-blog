@@ -1,4 +1,6 @@
-export const recipes = [
+import { RecipeType } from '@/types/recipe';
+
+export const recipes: RecipeType[] = [
   {
     id: '1',
     title: 'Homemade Brunch',
@@ -10,6 +12,8 @@ export const recipes = [
     totalIngredients: 9,
     totalCalories: 600,
     recipeImage: '/reciepe/menu-hero-1.png',
+    createdBy: 'Mohit',
+    createdAt: 'Dec 26, 2023',
   },
   {
     id: '2',
@@ -22,6 +26,8 @@ export const recipes = [
     totalIngredients: 7,
     totalCalories: 450,
     recipeImage: '/reciepe/menu-hero-2.png',
+    createdBy: 'Mohit',
+    createdAt: 'Dec 26, 2023',
   },
   {
     id: '3',
@@ -34,6 +40,8 @@ export const recipes = [
     totalIngredients: 6,
     totalCalories: 700,
     recipeImage: '/reciepe/menu-hero-3.png',
+    createdBy: 'Mohit',
+    createdAt: 'Dec 26, 2023',
   },
   {
     id: '4',
@@ -46,6 +54,8 @@ export const recipes = [
     totalIngredients: 8,
     totalCalories: 320,
     recipeImage: '/reciepe/menu-hero-4.png',
+    createdBy: 'Mohit',
+    createdAt: 'Dec 26, 2023',
   },
   {
     id: '5',
@@ -58,6 +68,8 @@ export const recipes = [
     totalIngredients: 10,
     totalCalories: 480,
     recipeImage: '/reciepe/menu-hero-5.png',
+    createdBy: 'Mohit',
+    createdAt: 'Dec 26, 2023',
   },
   {
     id: '6',
@@ -70,5 +82,7 @@ export const recipes = [
     totalIngredients: 12,
     totalCalories: 550,
     recipeImage: '/reciepe/menu-hero-6.png',
+    createdBy: 'Mohit',
+    createdAt: 'Dec 26, 2023',
   },
 ];
