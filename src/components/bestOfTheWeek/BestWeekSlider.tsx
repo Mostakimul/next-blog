@@ -71,7 +71,7 @@ const BestWeekSlider = () => {
               </div>
               <div className="mt-10 mb-10 sm:mb-0">
                 <Button
-                  href="/"
+                  href="/recipes/1"
                   text="View Recipe"
                   icon={<PiCaretCircleRightThin className="text-xl" />}
                 />

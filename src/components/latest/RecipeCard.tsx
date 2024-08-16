@@ -33,7 +33,7 @@ const RecipeCard = ({ recipe }: { recipe: RecipeType }) => {
         </p>
         <div className="card-actions justify-end">
           <Button
-            href="/"
+            href="/recipes/1"
             text="View Recipe"
             icon={<PiCaretCircleRightThin className="text-xl" />}
           />

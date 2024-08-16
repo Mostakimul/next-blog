@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const Footer = () => {
   return (
     <section>
@@ -11,9 +13,15 @@ const Footer = () => {
         </nav>
         <nav>
           <h6 className="footer-title">Site Links</h6>
-          <a className="link link-hover">Our Recipes</a>
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
+          <Link href={'/recipes'} className="link link-hover">
+            Our Recipes
+          </Link>
+          <Link href={'/about'} className="link link-hover">
+            About us
+          </Link>
+          <Link href={'/contact'} className="link link-hover">
+            Contact
+          </Link>
           <a className="link link-hover">Blogs</a>
         </nav>
         <nav>

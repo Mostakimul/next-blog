@@ -80,7 +80,7 @@ const Hero = () => {
 
                   <div className="mt-10 mb-10 sm:mb-0">
                     <Button
-                      href="/"
+                      href="/recipes"
                       text="View Recipe"
                       icon={<PiCaretCircleRightThin className="text-xl" />}
                     />
