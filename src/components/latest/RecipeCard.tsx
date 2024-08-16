@@ -1,11 +1,11 @@
 import { RecipeType } from '@/types/recipe';
 import Image from 'next/image';
-import Link from 'next/link';
 import {
   PiCalendarDotsLight,
   PiCaretCircleRightThin,
   PiStarThin,
 } from 'react-icons/pi';
+import Button from '../button/Button';
 
 const RecipeCard = ({ recipe }: { recipe: RecipeType }) => {
   const { recipeImage, title, createdBy, createdAt, rating } = recipe;
@@ -32,12 +32,11 @@ const RecipeCard = ({ recipe }: { recipe: RecipeType }) => {
           <PiCalendarDotsLight /> {createdAt}
         </p>
         <div className="card-actions justify-end">
-          <Link
-            href={'/'}
-            className="btn px-5 rounded-full bg-white hover:bg-gray-900 hover:text-white shadow-md"
-          >
-            View Recipe <PiCaretCircleRightThin className="text-xl" />
-          </Link>
+          <Button
+            href="/"
+            text="View Recipe"
+            icon={<PiCaretCircleRightThin className="text-xl" />}
+          />
         </div>
       </div>
     </div>

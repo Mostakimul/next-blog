@@ -1,6 +1,6 @@
 import { recipes } from '@/data/recipes';
-import Link from 'next/link';
 import { PiCaretCircleRightThin } from 'react-icons/pi';
+import Button from '../button/Button';
 import RecipeCard from './RecipeCard';
 
 const LatestRecipes = () => {
@@ -20,12 +20,17 @@ const LatestRecipes = () => {
               Latest Recipes
             </h3>
             <div className="mt-10 mb-10 sm:mb-0">
-              <Link
+              {/* <Link
                 href={'/'}
                 className="btn px-10 rounded-full bg-white shadow-md"
               >
-                View Recipes <PiCaretCircleRightThin className="text-xl" />
-              </Link>
+                View Recipes 
+              </Link> */}
+              <Button
+                href="/"
+                text="View Recipes"
+                icon={<PiCaretCircleRightThin className="text-xl" />}
+              />
             </div>
           </div>
         </div>

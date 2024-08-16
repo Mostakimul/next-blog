@@ -1,12 +1,12 @@
 'use client';
 import { recipes } from '@/data/recipes';
 import Image from 'next/image';
-import Link from 'next/link';
 import { PiCaretCircleRightThin } from 'react-icons/pi';
 import 'swiper/css/effect-fade';
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import ContainerWrapper from '../ContainerWrapper';
+import Button from '../button/Button';
 
 const Hero = () => {
   return (
@@ -79,12 +79,11 @@ const Hero = () => {
                   </div>
 
                   <div className="mt-10 mb-10 sm:mb-0">
-                    <Link
-                      href={'/'}
-                      className="btn px-10 rounded-full bg-white shadow-md"
-                    >
-                      View Recipe <PiCaretCircleRightThin className="text-xl" />
-                    </Link>
+                    <Button
+                      href="/"
+                      text="View Recipe"
+                      icon={<PiCaretCircleRightThin className="text-xl" />}
+                    />
                   </div>
                 </div>
                 <div className="place-self-center">
