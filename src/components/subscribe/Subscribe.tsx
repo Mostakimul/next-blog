@@ -19,7 +19,7 @@ const Subscribe = () => {
               placeholder="username@site.com"
               className="input input-bordered join-item w-full"
             />
-            <button className="btn btn-accent join-item">Subscribe</button>
+            <button className="btn join-item">Subscribe</button>
           </div>
         </div>
       </ContainerWrapper>

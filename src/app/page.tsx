@@ -1,5 +1,6 @@
 import BestWeekRecipe from '@/components/bestOfTheWeek/BestWeekRecipe';
 import Categories from '@/components/categories/Categories';
+import Footer from '@/components/footer/Footer';
 import Hero from '@/components/hero/Hero';
 import LatestRecipes from '@/components/latest/LatestRecipes';
 import LatestUpdate from '@/components/latestUpdated/LatestUpdate';
@@ -23,6 +24,7 @@ export default function Home() {
       <BestWeekRecipe />
       <LatestUpdate />
       <Subscribe />
+      <Footer />
     </main>
   );
 }
