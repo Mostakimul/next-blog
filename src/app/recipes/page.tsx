@@ -1,5 +1,6 @@
 import ContainerWrapper from '@/components/ContainerWrapper';
 import RecipeCard from '@/components/latest/RecipeCard';
+import Quote from '@/components/quote/Quote';
 import { recipes } from '@/data/recipes';
 
 const Recipes = () => {
@@ -39,22 +40,10 @@ const Recipes = () => {
           </div>
         </section>
       </ContainerWrapper>
-      <section
-        className="hero"
-        style={{
-          backgroundImage: "url('/pages/recipe-bg-2.jpg')",
-        }}
-      >
-        <div className="hero-overlay bg-opacity-60"></div>
-        <div className="hero-content text-neutral-content text-center">
-          <div className="max-w-max pt-32 pb-10 space-y-5">
-            <h3 className="text-4xl">
-              To get the best results, you must talk to your Vegetables.
-            </h3>
-            <p>- Charles, Prince of Wales</p>
-          </div>
-        </div>
-      </section>
+      <Quote
+        text='"To get the best results, you must talk to your Vegetables."'
+        author="Charles, Prince of Wales"
+      />
     </>
   );
 };
