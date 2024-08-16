@@ -10,7 +10,7 @@ import Button from '../button/Button';
 
 const Hero = () => {
   return (
-    <section className="pt-16">
+    <section className="pt-32">
       <ContainerWrapper>
         <Swiper
           effect={'fade'}

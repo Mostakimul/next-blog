@@ -7,7 +7,7 @@ const NavbarItems = () => {
         <Link href={'/'}>Home</Link>
       </li>
       <li>
-        <Link href={'/recipies'}>Recipies</Link>
+        <Link href={'/recipes'}>Recipes</Link>
       </li>
       <li>
         <Link href={'/about'}>About Us</Link>

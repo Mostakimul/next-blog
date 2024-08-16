@@ -1,10 +1,8 @@
 import BestWeekRecipe from '@/components/bestOfTheWeek/BestWeekRecipe';
 import Categories from '@/components/categories/Categories';
-import Footer from '@/components/footer/Footer';
 import Hero from '@/components/hero/Hero';
 import LatestRecipes from '@/components/latest/LatestRecipes';
 import LatestUpdate from '@/components/latestUpdated/LatestUpdate';
-import Navbar from '@/components/navbar/Navbar';
 import Subscribe from '@/components/subscribe/Subscribe';
 import Greetings from '@/components/welcome/Greetings';
 
@@ -15,7 +13,6 @@ export default function Home() {
         className="h-screen bg-cover bg-center"
         style={{ backgroundImage: "url('/hero/hero-bg-2.jpg')" }}
       >
-        <Navbar />
         <Hero />
       </section>
       <Greetings />
@@ -24,7 +21,6 @@ export default function Home() {
       <BestWeekRecipe />
       <LatestUpdate />
       <Subscribe />
-      <Footer />
     </main>
   );
 }

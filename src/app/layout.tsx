@@ -1,3 +1,5 @@
+import Footer from '@/components/footer/Footer';
+import Navbar from '@/components/navbar/Navbar';
 import type { Metadata } from 'next';
 import { Noto_Serif } from 'next/font/google';
 import 'swiper/css';
@@ -16,7 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="autumn">
-      <body className={noto_serif.className}>{children}</body>
+      <body className={noto_serif.className}>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

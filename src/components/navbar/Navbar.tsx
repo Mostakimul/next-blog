@@ -3,7 +3,7 @@ import NavbarItems from './NavbarItems';
 
 const Navbar = () => {
   return (
-    <nav className="relative z-1">
+    <nav className="fixed top-0 left-0 w-full bg-transparent z-50">
       <ContainerWrapper>
         <div className="navbar">
           <div className="navbar-start">
