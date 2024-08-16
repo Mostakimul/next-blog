@@ -26,7 +26,7 @@ const BestWeekSlider = () => {
       className="mySwiper rounded-2xl"
     >
       {recipes.slice(2, 4).map((recipe) => (
-        <SwiperSlide>
+        <SwiperSlide key={recipe.id}>
           <div className="card grid grid-cols-5 bg-base-100 shadow-xl">
             <figure className="col-span-full md:col-span-2">
               <Image
