@@ -10,7 +10,7 @@ import Button from '../button/Button';
 
 const Hero = () => {
   return (
-    <section className="pt-32">
+    <section className="pt-20 md:pt-32">
       <ContainerWrapper>
         <Swiper
           effect={'fade'}
@@ -31,7 +31,7 @@ const Hero = () => {
                       {item.description}
                     </p>
                   </div>
-                  <div className="flex items-center gap-5 mb-10">
+                  <div className="flex items-center gap-5 mb-3 md:mb-10">
                     <div className="rating rating-md">
                       {[1, 2, 3, 4, 5].map((star) => (
                         <input
@@ -78,7 +78,7 @@ const Hero = () => {
                     </div>
                   </div>
 
-                  <div className="mt-10 mb-10 sm:mb-0">
+                  <div className="mt-3 md:mt-10 md:mb-10">
                     <Button
                       href="/recipes"
                       text="View Recipe"
@@ -92,7 +92,7 @@ const Hero = () => {
                     width={100}
                     height={100}
                     alt="menu"
-                    className="w-80 h-80 lg:w-[550px] lg:h-[550px] animate-spin-slow"
+                    className="w-40 h-40 lg:w-[550px] lg:h-[550px] animate-spin-slow"
                   />
                 </div>
               </div>
