@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import ContainerWrapper from '../ContainerWrapper';
 import NavbarItems from './NavbarItems';
 
@@ -36,7 +37,13 @@ const Navbar = () => {
               </ul>
             </div>
             <a className="text-xl bg-slate-50 px-4 py-4 rounded-md font-semibold">
-              MN's Recipes
+              <Image
+                src={'/MNLogo.png'}
+                alt="logo"
+                width={100}
+                height={100}
+                className="w-14"
+              />
             </a>
           </div>
           <div className="navbar-end bg-slate-100 rounded-l-md hidden lg:flex">
