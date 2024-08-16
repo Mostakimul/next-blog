@@ -1,30 +1,20 @@
 import ContainerWrapper from '@/components/ContainerWrapper';
 import RecipeCard from '@/components/latest/RecipeCard';
+import PageHero from '@/components/pageHero/PageHero';
 import Quote from '@/components/quote/Quote';
 import { recipes } from '@/data/recipes';
 
 const Recipes = () => {
   return (
     <>
-      <div
-        className="hero"
-        style={{
-          backgroundImage: "url('/pages/recipes-bg.jpg')",
-        }}
-      >
-        <div className="hero-overlay bg-opacity-60"></div>
-        <div className="hero-content text-neutral-content text-center">
-          <div className="max-w-2xl pt-32 pb-10">
-            <h1 className="mb-5 text-5xl font-bold">Recipes</h1>
-            <p className="mb-5">
-              Discover a world of culinary inspiration with our diverse
+      <PageHero
+        image="/pages/recipes-bg.jpg"
+        title="Recipes"
+        description="Discover a world of culinary inspiration with our diverse
               collection of recipes. Whether you're a seasoned chef or a home
-              cook, our carefully curated selections will help you create
-              memorable meals and explore new flavors with ease.
-            </p>
-          </div>
-        </div>
-      </div>
+              cook, our carefully curated selections wil l help you create
+              memorable meals and explore new flavors with ease."
+      />
       <ContainerWrapper>
         <section>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 pt-24 pb-12">
