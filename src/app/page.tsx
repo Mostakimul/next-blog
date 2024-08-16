@@ -1,3 +1,4 @@
+import BestWeekRecipe from '@/components/bestOfTheWeek/BestWeekRecipe';
 import Categories from '@/components/categories/Categories';
 import Hero from '@/components/hero/Hero';
 import LatestRecipes from '@/components/latest/LatestRecipes';
@@ -17,6 +18,7 @@ export default function Home() {
       <Greetings />
       <Categories />
       <LatestRecipes />
+      <BestWeekRecipe />
     </main>
   );
 }
